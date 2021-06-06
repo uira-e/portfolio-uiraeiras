@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-vermelha: #D95448;
+  --cor-verde-escuro: #24402E;
+  --cor-verde: #d4e744;
+  --cor-cinza: #536473;
+  --cor-cinza-claro: #F2F2F2;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cor-verde-escuro);
+  background-color: #f2f2f2;
+}
+
+.conteudo {
+  width: 80%;
+  max-width: 71.25rem;
+  margin: 0 auto 0 auto;
+}
+
+.cabecalho {
+  background: #fff;
+  padding: 1.25rem 0;
+  -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+  -webkit-animation: slide-down 0.7s;
+  width: 100%;
+  position: fixed;
+}
+
+.cabecalho .conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--cor-verde-escuro);
+  width: 20%;
+}
+
+.menu-principal {
+  width: 65%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.midias-sociais {
+  width: 7%;
+  margin-left: 1rem;
+}
+
+.menu-principal ul, .midias-sociais {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-principal a, .midias-sociais a {
+  color: var(--cor-verde-escuro);
+  text-decoration: none;
+}
+
+.menu-principal a:hover, .midias-sociais a:hover {
+  color: var(--cor-vermelha);
+}
+
+.inicio {
+  padding: 3.125rem 0;
+  background-color: var(--cor-verde);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.inicio .linha {
+  display: flex;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coluna {
+  width: 45%;
+}
+
+.imagem-responsiva {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imagem-redonda {
+  border-radius: 50rem;
+  border: 10px solid #fff;
+}
+
+.apresentacao, .localizacao {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.apresentacao {
+  text-transform: uppercase;
+}
+
+.profissao {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.botoes {
+  margin-top: 3rem;
+}
+
+.botao {
+  padding: 1rem 1.5rem;
+  background-color: var(--cor-verde-escuro);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+
+.botao:hover {
+  /* opacity: 0.8; */
+  background-color: var(--cor-vermelha);
+}
+
+.botao-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--cor-verde-escuro);
+  margin-left: 1rem;
+}
+
+.botao-link:hover {
+  text-decoration: underline;
+}
+
+.sobre {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.texto-centro {
+  text-align: center;
+}
+
+.titulo-secao {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.selo-secao {
+  font-size: 1rem;
+  background-color: var(--cor-verde);
+  padding: .15rem .35rem;
+}
+
+.p-selo-secao {
+  margin-bottom: .8rem;
+}
+
+.fileira {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bloco-texto-sobre {
+  width: 65%;
+  margin-right: ;
+}
+
+.titulo-item-secao {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.texto-normal {
+  font-weight: 300;
+}
+
+.texto-destaque {
+  font-weight: 700;
+}
+
+.paragrafo-sobre {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.bloco-numero-experiencia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+}
+
+.numero-experiencia {
+  font-weight: 400;
+  font-size: 8.7rem;
+}
+
+.experiencia {
+  font-size: 1.8rem;
+}
+
+.circulo {
+  height: 125px;
+  width: 125px;
+  background-color: var(--cor-verde);
+  border-radius: 50%;
+}
+
+.informacoes-pessoais {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.titulo-info {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+.info {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.o-que-sei-fazer {
+  padding: 6rem 0;
+}
+
+.sei-fazer-itens {
+  width: 30%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.sei-fazer-itens h3 {
+  margin: 1.2rem 0;
+  font-size: 1.5rem;
+}
+
+.sei-fazer-itens p,
+.coluna-experiencias p {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.fas {
+  font-size: 4rem;
+  color: var(--cor-verde);
+}
+
+.experiencias {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.bloco-experiencias {
+  padding-left: 1.2rem;
+  border-left: var(--cor-verde) solid 1.5px;
+}
+
+.coluna-experiencias h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.coluna-experiencias h3,
+.coluna-experiencias p {
+  margin-bottom: .75rem;
+}
+
+.coluna-experiencias hr {
+  margin-top: 1.5rem;
+}
+
+.coluna-experiencias h3 {
+  font-size: 1.2rem;
+}
+
+.grupo-colunas {
+  display: flex;
+  justify-content: space-between;
+}
