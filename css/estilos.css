@@ -25,6 +25,10 @@ body {
   background-color: #f2f2f2;
 }
 
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .conteudo {
   width: 80%;
   max-width: 71.25rem;
@@ -39,6 +43,7 @@ body {
   -webkit-animation: slide-down 0.7s;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 .cabecalho .conteudo {
@@ -143,7 +148,6 @@ body {
 }
 
 .botao:hover {
-  /* opacity: 0.8; */
   background-color: var(--cor-vermelha);
 }
 
@@ -251,7 +255,7 @@ body {
   font-weight: 500;
 }
 
-.o-que-sei-fazer, .portfolio {
+.o-que-sei-fazer, .portfolio, .contato {
   padding: 6rem 0;
 }
 
@@ -271,7 +275,7 @@ body {
   font-size: 1.1rem;
 }
 
-.fas {
+.icone-sei-fazer {
   font-size: 4rem;
   color: var(--cor-verde);
 }
@@ -410,6 +414,101 @@ body {
 /* IMAGENS PORTFOLIO */
 
 .thumbnail h3:hover {
-opacity: 100;
+  opacity: 100;
+  /* z-index: 1; */
 }
 
+.contato {
+  background-color: var(--cor-vermelha);
+  color: white;
+  line-height: 2rem;
+}
+
+.titulo-contato {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 2.7rem;
+}
+
+.contato h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.contato p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: .7rem;
+}
+
+.contato p:first-of-type {
+  margin-bottom: 2.3rem;
+}
+
+.grupo-form label {
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+.input-form {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px white solid;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 300;
+}
+
+.dados-form {
+  height: 2.2rem;
+}
+
+.input-form:focus {
+  outline: none;
+  border-bottom: 1.7px var(--cor-cinza) solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.botao-enviar {
+  padding: 1rem 2.2rem;
+  background-color: var(--cor-cinza);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: none;
+  -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+
+.botao-enviar span {
+  margin-left: .5rem;
+}
+
+.botao-enviar:hover {
+  background-color: var(--cor-verde);
+  color: var(--cor-verde-escuro);
+}
+
+.midias-sociais-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  list-style: none;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.midias-sociais-contato a {
+  color: white;
+  text-decoration: none;
+}
+
+.midias-sociais-contato a:hover {
+  color: var(--cor-verde);
+}
