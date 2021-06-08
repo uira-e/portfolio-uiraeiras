@@ -251,7 +251,7 @@ body {
   font-weight: 500;
 }
 
-.o-que-sei-fazer {
+.o-que-sei-fazer, .portfolio {
   padding: 6rem 0;
 }
 
@@ -337,3 +337,79 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.container-botao-cv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botao-cv {
+  padding: 1rem 1.5rem;
+  border: var(--cor-verde-escuro) 2px solid;
+  color: var(--cor-verde-escuro);
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.botao-cv:hover {
+  background-color: var(--cor-vermelha);
+  color: white;
+  border: var(--cor-vermelha) 2px solid;
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.625rem, 1fr));
+  gap: 2rem 2rem;
+  padding: 3rem 0;
+}
+
+.imagem-portfolio {
+  min-width: 16.625rem;
+  min-height: 17.625rem;
+  background-color: black;
+}
+
+.imagem-portfolio a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all ease .3s;
+}
+
+/* IMAGENS PORTFOLIO */
+
+.thumbnail-01 {
+  background-image: url(..//imagens/img-portfolio-marcacao.jpg);
+  background-size: cover;
+}
+
+/* IMAGENS PORTFOLIO */
+
+.thumbnail h3:hover {
+opacity: 100;
+}
+
