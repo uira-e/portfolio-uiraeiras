@@ -17,6 +17,10 @@
   --cor-cinza-claro: #F2F2F2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
@@ -211,7 +215,7 @@ body {
 }
 
 .paragrafo-sobre {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2rem;
 }
 
@@ -255,7 +259,7 @@ body {
   font-weight: 500;
 }
 
-.o-que-sei-fazer, .portfolio, .contato {
+.o-que-sei-fazer, .portfolio, .contato, .rodape {
   padding: 6rem 0;
 }
 
@@ -510,5 +514,22 @@ textarea {
 }
 
 .midias-sociais-contato a:hover {
+  color: var(--cor-verde);
+}
+
+.rodape {
+  padding: 4rem 0;
+  background-color: var(--cor-cinza);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.texto-direita {
+  text-align: right;
+}
+
+.link-rodape {
+  text-decoration: none;
+  font-weight: 500;
   color: var(--cor-verde);
 }
