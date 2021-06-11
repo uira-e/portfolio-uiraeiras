@@ -41,13 +41,16 @@ body {
 
 .cabecalho {
   background: #fff;
-  padding: 1.25rem 0;
   -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
   box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
   -webkit-animation: slide-down 0.7s;
   width: 100%;
   position: fixed;
   z-index: 1;
+}
+
+.conteudo-cabecalho {
+  padding: 1.25rem 0;
 }
 
 .cabecalho .conteudo {
@@ -62,18 +65,44 @@ body {
   width: 20%;
 }
 
+.logo a {
+  text-decoration: none;
+  color: var(--cor-verde-escuro);
+}
+
+.logo span {
+  font-weight: 300;
+}
+
 .menu-principal {
   width: 65%;
   margin-left: 1rem;
   margin-right: 1rem;
   text-transform: uppercase;
+}
 
+.menu-principal-responsivo {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.menu-principal-responsivo ul {
+  list-style: none;
+  display: none;
+}
+
+.menu-hamburger {
+  display: flex;
+  justify-content: space-between;
 }
 
 .midias-sociais {
   font-size: 1.15rem;
-  width: 7%;
   margin-left: 1rem;
+}
+
+.midias-sociais a {
+  margin-right:.6rem;
 }
 
 .menu-principal ul, .midias-sociais {
@@ -83,13 +112,27 @@ body {
   align-items: center;
 }
 
-.menu-principal a, .midias-sociais a {
+.nav-ul {
+  flex-wrap: wrap;
+}
+
+.menu-principal a, .menu-principal-responsivo a, .midias-sociais a {
   color: var(--cor-verde-escuro);
   text-decoration: none;
 }
 
 .menu-principal a:hover, .midias-sociais a:hover {
   color: var(--cor-vermelha);
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: var(--cor-verde-escuro);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  margin-left: 1rem;
 }
 
 .inicio {
@@ -397,7 +440,6 @@ body {
   height: 100%;
   -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 9%);
   box-shadow: 0px 5px 15px rgb(0 0 0 / 9%);
-
 }
 
 .thumbnail h3 {
@@ -421,26 +463,31 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .thumbnail-02 {
   background-image: url(..//imagens/img-portfolio-02.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .thumbnail-03 {
   background-image: url(..//imagens/img-portfolio-03.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .thumbnail-04 {
   background-image: url(..//imagens/img-portfolio-04.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .thumbnail-05 {
   background-image: url(..//imagens/img-portfolio-05.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .thumbnail-06 {
   background-image: url(..//imagens/img-portfolio-06.jpg);
   background-size: cover;
@@ -464,6 +511,7 @@ body {
   font-weight: 400;
   font-size: 2.5rem;
   margin-bottom: 2.7rem;
+  line-height: 3rem;
 }
 
 .contato h3 {
@@ -565,4 +613,46 @@ textarea {
   text-decoration: none;
   font-weight: 500;
   color: var(--cor-verde);
+}
+
+@media screen and (max-width: 1080px) {
+  
+  .menu-principal {
+    display: none;
+  }
+ 
+  .menu-principal-responsivo .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-principal-responsivo li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-principal-responsivo a {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+  }  
+
+  .menu-principal-responsivo a:hover {
+   background-color: rgba(212, 231, 68, .1);
+   color: var(--cor-vermelha);
+  }
+
+  .nav-ul.show {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .midias-sociais {
+    width: 10%;
+  }
 }
