@@ -676,9 +676,15 @@ textarea {
   }
   .informacoes-pessoais {
     flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
+
   .sei-fazer-itens {
     width: 45%;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
   .bloco-info {
     width: 75%;
@@ -726,6 +732,12 @@ textarea {
   }
   .rodape {
     padding: 1rem 0;
+  }
+
+  .informacoes-pessoais {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 }
 
