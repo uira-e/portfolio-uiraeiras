@@ -102,7 +102,7 @@ body {
 }
 
 .midias-sociais a {
-  margin-right:.6rem;
+  margin-right: .6rem;
 }
 
 .menu-principal ul, .midias-sociais {
@@ -616,145 +616,179 @@ textarea {
 }
 
 @media screen and (max-width: 1080px) {
-  
   .menu-principal {
     display: none;
   }
- 
   .menu-principal-responsivo .nav-ul {
     display: none;
     flex-direction: column;
     width: 100%;
   }
-
   .menu-principal-responsivo li {
     width: 100%;
     text-align: center;
   }
-
   .menu-principal-responsivo a {
     padding: 1rem;
     width: 100%;
     display: block;
-  }  
-
+  }
   .menu-principal-responsivo a:hover {
-   background-color: rgba(212, 231, 68, .1);
-   color: var(--cor-vermelha);
-  }
-
-  .nav-ul.show {
-    display: flex;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger:hover {
+    background-color: rgba(212, 231, 68, .1);
     color: var(--cor-vermelha);
   }
 
+   .nav-ul.show {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger:hover {
+    color: var(--cor-vermelha);
+  }
   .midias-sociais {
     width: 10%;
   }
 }
 
 @media screen and (max-width: 980px) {
-  
   .linha {
     flex-direction: column-reverse;
     text-align: center;
   }
-  
   .coluna {
     width: 100%;
     margin: 1.2rem 0;
   }
-
-.fileira {
-  justify-content: center;
-}
-
-.profissao {
-
-}
-
-.imagem-responsiva {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.bloco-texto-sobre {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.informacoes-pessoais {
-  flex-wrap: wrap;
-}
-
-.sei-fazer-itens {
-  width: 45%;
-}
-
-
-.bloco-info {
-  width: 45%;
-}
-
-.grupo-colunas {
-  flex-direction: column;
-}
-
-.coluna-contato {
-  text-align: center;
-}
-
-.grupo-form {
-  text-align: left;
-}
-
-.midias-sociais-contato {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fileira-rodape, .texto-direita {
-  text-align: center;
-}
-
+  .fileira {
+    justify-content: center;
+  }
+  
+  .imagem-responsiva {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .bloco-texto-sobre {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .informacoes-pessoais {
+    flex-wrap: wrap;
+  }
+  .sei-fazer-itens {
+    width: 45%;
+  }
+  .bloco-info {
+    width: 75%;
+  }
+  .grupo-colunas {
+    flex-direction: column;
+  }
+  .grupo-colunas-contato {
+    margin: 0;
+  }
+  .coluna-contato {
+    text-align: center;
+  }
+  .grupo-form {
+    text-align: left;
+  }
+  .midias-sociais-contato {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .botao-enviar {
+    margin-top: 2rem;
+  }
+  .fileira-rodape, .texto-direita {
+    text-align: center;
+  }
+  .rodape {
+    padding: 2rem 0;
+  }
 }
 
 @media screen and (max-width: 640px) {
-
   .sei-fazer-itens {
     width: 60%;
   }
-
   .bloco-texto-sobre {
     width: 100%;
-      }
+  }
+  .sobre, .o-que-sei-fazer, .experiencias, .portfolio {
+    padding: 3.5rem 0;
+  }
+  .midias-sociais-contato {
+    margin-bottom: 1rem;
+    width: 45%;
+  }
+  .rodape {
+    padding: 1rem 0;
+  }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
+  
+   .profissao {
+    font-size: 2rem;
+  }
 
-  .profissao {
-font-size: 2rem;  }
-
-.botoes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .inicio { 
+    padding-top: 8rem;
 }
 
-.botao {
-  margin-bottom: 1rem;
+  .informacoes-pessoais {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .bloco-info {
+    margin-bottom: 1rem;
+  }
+
+  .sei-fazer-itens {
+    width: 100%;
 }
 
-.botao-link {
-  width: 100%;
+  .botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .botao {
+    margin-bottom: 1rem;
+  }
+  .botao-link {
+    width: 100%;
+  }
+
+
 }
 
+@media screen and (max-width: 420px) {
+  .inicio { 
+    padding-top: 7rem;
+}
+}
+
+@media screen and (max-width: 380px) {
+
+  .imagem-responsiva {
+    width: 60%;
+  }
+
+.profissao {
+  font-size: 1.7rem;
+}
+
+.texto-normal {
+  text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+.midias-sociais {
+  display: none;
+}
 }
