@@ -652,7 +652,109 @@ textarea {
     display: block;
   }
 
+  .hamburger:hover {
+    color: var(--cor-vermelha);
+  }
+
   .midias-sociais {
     width: 10%;
   }
+}
+
+@media screen and (max-width: 980px) {
+  
+  .linha {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .coluna {
+    width: 100%;
+    margin: 1.2rem 0;
+  }
+
+.fileira {
+  justify-content: center;
+}
+
+.profissao {
+
+}
+
+.imagem-responsiva {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.bloco-texto-sobre {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.informacoes-pessoais {
+  flex-wrap: wrap;
+}
+
+.sei-fazer-itens {
+  width: 45%;
+}
+
+
+.bloco-info {
+  width: 45%;
+}
+
+.grupo-colunas {
+  flex-direction: column;
+}
+
+.coluna-contato {
+  text-align: center;
+}
+
+.grupo-form {
+  text-align: left;
+}
+
+.midias-sociais-contato {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fileira-rodape, .texto-direita {
+  text-align: center;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .sei-fazer-itens {
+    width: 60%;
+  }
+
+  .bloco-texto-sobre {
+    width: 100%;
+      }
+}
+
+@media screen and (max-width: 520px) {
+
+  .profissao {
+font-size: 2rem;  }
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botao {
+  margin-bottom: 1rem;
+}
+
+.botao-link {
+  width: 100%;
+}
+
 }
